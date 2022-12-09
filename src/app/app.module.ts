@@ -8,6 +8,7 @@ import { LoadingComponent } from './loading/loading.component';
 import { VisionComponent } from './vision/vision.component';
 import { PalletpackComponent } from './palletpack/palletpack.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LoginComponent,
     LoadingComponent,
     VisionComponent,
-    PalletpackComponent
+    PalletpackComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
