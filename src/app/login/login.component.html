@@ -1,1 +1,52 @@
-<p>login works!</p>
+<div align="center" class="main">
+    <div class="picture">
+        <h1 class="title">Vision System Application</h1>
+
+        <img src="/assets/Images/loginoperator.png" />
+    </div>
+
+    <!-- Login Form -->
+    <div class="form">
+        <form class="login-form" [formGroup]="loginForm">
+            <div style="margin-left: 40px;">
+                <img src="/assets/Images/logo.png" class="logo" />
+            </div>
+
+
+            <br /><br />
+            <mat-label style="margin-right: 12px">User Name:</mat-label>
+            <mat-form-field appearance="outline">
+                <input matInput type="text" name="name" formControlName="user" />
+                <mat-error>UserName is Required</mat-error>
+            </mat-form-field>
+            <br />
+            <mat-label style="margin-right: 20px">Password:</mat-label>
+            <mat-form-field appearance="outline">
+                <input [type]="showPassword ? 'text' : 'password'" name="password" matInput name="password"
+                    type="password" formControlName="pw" autocomplete="off" />
+                <mat-error>Password is Required</mat-error>
+                <!-- <mat-icon matSuffix (click)="togglePasswordVisibility()">
+            {{ showPassword ? "visibility_off" : "visibility" }}
+          </mat-icon> -->
+            </mat-form-field>
+            <br />
+            <mat-label style="margin-right: 65px">Role:</mat-label>
+
+            <mat-form-field appearance="outline">
+                <mat-select formControlName="operator">
+                    <mat-option *ngFor="let val of roles" [value]="val">{{val}} </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <br />
+            <div>
+                <button mat-button class="login" type="submit" (click)="loginuser()">
+                    Login
+                </button>
+            </div>
+
+            <br /><br />
+            <a href="#">Forgot Password?</a>
+        </form>
+    </div>
+</div>

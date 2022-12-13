@@ -1,0 +1,63 @@
+.main {
+
+    border: 1px solid brown;
+
+}
+
+.title {
+    color: brown;
+    text-align: center;
+    margin-top: 5%;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+
+
+.image {
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+img {
+    height: 30%;
+    width: 50%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button1 {
+    background-color: yellowgreen;
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+    height: 60px;
+    margin: 30px;
+    border: 1px solid #0047AB;
+    font-size: 20px;
+}
+
+.button2 {
+    background-color: rgb(107, 154, 241);
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+    height: 60px;
+    margin: 30px;
+    border: 1px solid #0047AB;
+    font-size: 20px;
+
+}
+
+.scan {
+    height: 70px;
+    width: 300px;
+    font-size: 40px;
+    border: 1px solid blue !important;
+    color: red !important;
+    font-weight: bold !important;
+}

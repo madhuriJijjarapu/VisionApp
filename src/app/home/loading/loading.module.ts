@@ -2,24 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { LoadingRoutingModule } from './loading-routing.module';
-import { ScanpageComponent } from '../scanpage/scanpage.component';
-import { LoadingviewComponent } from '../loadingview/loadingview.component';
-import { PalletstatusComponent } from '../palletstatus/palletstatus.component';
-import { DonutchartComponent } from '../donutchart/donutchart.component';
-import { PalletdetailsComponent } from '../palletdetails/palletdetails.component';
-
-
+import { SkuscanComponent } from './skuscan/skuscan.component';
+import { LoadingviewComponent } from './loadingview/loadingview.component';
+import { PalletloadstatusComponent } from './palletloadstatus/palletloadstatus.component';
+import { PalletdetailsComponent } from './palletdetails/palletdetails.component';
+import { MaterialModule } from 'src/app/material.module';
 @NgModule({
   declarations: [
-    ScanpageComponent,
-    LoadingviewComponent,
-    PalletstatusComponent,
-    DonutchartComponent,
-    PalletdetailsComponent
+    SkuscanComponent, LoadingviewComponent, PalletloadstatusComponent, PalletdetailsComponent
   ],
   imports: [
     CommonModule,
-    LoadingRoutingModule
+    LoadingRoutingModule, MaterialModule
   ]
 })
 export class LoadingModule { }
